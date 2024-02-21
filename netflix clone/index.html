@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+        <title>Netflix</title>
+        <style>
+            *
+            {
+
+                margin:0;
+                padding: 0;
+            }
+            body{
+                background-color:black;
+            }
+            .navbar
+            {
+                display:flex;
+                
+                justify-content: center;
+                
+                padding:10px 20px;
+            }
+            .navbar a {
+                position: relative;
+                top: 15px;
+                left:350px; 
+                text-decoration: none;
+                align-items: center;
+                color: white;
+                padding: 10px 15px;
+                font-family:Arial, Helvetica, sans-serif;
+
+                font-size: 20px;
+                display: flex; 
+                justify-content: flex-end; 
+              }
+              html{
+                scroll-behavior: smooth;
+              }
+
+              
+              @media (max-width: 768px) {
+                .navbar a {
+                  top: 0;
+                  right: auto; 
+                  width: 100%; 
+                }
+              }
+              
+              @media (max-width: 480px) {
+                .navbar a {
+                  font-size: 14px; 
+                  padding: 5px 10px;
+                }
+              }
+              
+            .logo img
+            {
+               position: absolute;
+               left: 10px;
+             top:0;
+               height:100px;
+               background: transparent;
+            }
+            #tv,#movies,#RecentlyAdded,#MyList
+             {
+                position: relative;
+                top:30px;
+                height:500px;
+                 width:100%;
+             }
+             #tv
+             {
+                background-color:black;
+             }
+             #movies
+             {
+              background-color:black;
+             }
+             #movies img{
+              height: 200px;
+              width:300px;
+              cursor:pointer;
+              transition: transform 0.3s ease-in-out;
+             }
+             #movies img:hover{
+              transform: scale(1.2);
+             }
+             #tv img{
+                   height: 200px;
+                  width:300px;
+                  cursor:pointer;
+                  transition: transform 0.3s ease-in-out;
+                 }
+                 #tv img:hover{
+                  transform: scale(1.2);
+                 }
+                 #MyList img{
+                  height: 200px;
+                 width:300px;
+                 cursor:pointer;
+                 transition: transform 0.3s ease-in-out;
+                }
+                #MyList img:hover{
+                 transform: scale(1.2);
+                }
+                 #RecentlyAdded img{
+                  height: 200px;
+                 width:300px;
+                 cursor:pointer;
+                 transition: transform 0.3s ease-in-out;
+                }
+                #RecentlyAdded img:hover{
+                 transform: scale(1.2);
+                }
+                 #tv,#movies,#RecentlyAdded,#MyList  h1{
+                  color:white;
+                  font-family: Arial, Helvetica, sans-serif;
+                 }
+             @media (max-width: 768px) {
+              #tv,#movies,#RecentlyAdded,#MyList{
+                
+                width: 100%; 
+              }
+            }
+
+            @media (max-width: 480px) {
+              #tv {
+                width:100%
+              }
+            }
+            
+             
+            
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="net.jpg" alt="netflix">
+            </div>
+          
+            <a href="#home">Home</a>
+            <a href="#tv">TV Shows</a>
+            <a href="#movies">Movies</a>
+            <a href="#RecentlyAdded">Recently Added</a>
+            <a href="#MyList">My List</a>
+            <a href="">My Account</a>
+            <a href="">Settings</a>
+             
+        </div>
+        
+        <section id="tv">
+          <h1>TV Shows</h1>
+             <a href="https://www.netflix.com/in/title/70195800">
+              <img src="suits.jpg" alt="suit"></a>
+             <img src="crown.jpg" alt="">
+             <img src="killer.jpg" alt="">
+             <img src="Greys-Anatomy.jpg" alt="">
+             <img src="fate.webp" alt="">
+             <img src="doublepiege.jpg" alt="">
+             <img src="foolmeonce.jpg" alt="">
+             <img src="ginny.jpg" alt="">
+             <img src="grisledia.jpg" alt="">
+             <img src="murder.jpg" alt="">
+        </section>
+        <section id="movies">
+          <h1>Movies</h1>
+          <img src="darkknight.jpg" alt="">
+          <img src="50shades.jpg" alt="">
+          <img src="foolmeonce.jpg" alt="">
+          <img src="rrr.jpg" alt="">
+          <img src="adam.jpg" alt="">
+          <img src="mother.jpg" alt="">
+          <img src="animal.jpg" alt="">
+          <img src="islandof.jpg" alt="">
+          <img src="interstellar.jpg" alt="">
+          <img src="dune.jpg" alt="">
+        </section>
+        <section id="RecentlyAdded">
+      <h1>Recently Added</h1>
+           <img src="hiddenlove.jpg" alt="">
+           <img src="birdbox.jpg" alt="">
+           <img src="friends.jpg" alt="">
+           <img src="gooddoctor.webp" alt="">
+           <img src="nowhere.avif" alt="">
+           <img src="salaar.jpg" alt="">
+           <img src="vampire.webp" alt="">
+           <img src="vikings.webp" alt="">
+           <img src="societyofthesnow.webp" alt="">
+           <img src="peaky.jpg" alt="">
+        </section>
+        <section id="MyList">
+          <h1>My List</h1>
+            <img src="jawan.png" alt="">
+            <img src="paradise.jpg" alt="">
+            <img src="extraction.jpg" alt="">
+            <img src="squidgame.jpg" alt="">
+            <img src="money-heist-story.jpg" alt="">
+            <img src="lostinspace.jpg" alt="">
+            <img src="kantara.avif" alt="">
+            <img src="wednesday.jpg" alt="">
+            <img src="hinanna.avif" alt="">
+            <img src="railwaymen.jpg" alt="">
+            </section>
+           
+    </body>
+</html>
